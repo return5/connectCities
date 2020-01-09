@@ -8,6 +8,10 @@ see controls.txt for controls and game info.
   ## version 2.0
     game has ben re-written from scratch. should now be much cleaner and more efficent code. 
     
+ ## screenshots
+  ![screenshot1](/screenshots/screenshot1.png)
+  ![screenshot2](/screenshots/screenshot2.png)
+    
   ## dependencies 
     will need:
       - C compiler. gcc or clang is required to compile if using the install.sh script
