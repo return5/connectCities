@@ -6,7 +6,7 @@
 
 if [ "$1" == "--help" ]; then
 	echo "compile script for connect cities"
-	echo "compiles sub game and creates executable names 'submarine_game'"
+	echo "compiles sub game and creates executable names 'connect_cities'"
 	echo "defaults to using gcc, but uses clang as a fallback or if user supplies '-c' to script."
 	echo
 	echo "options:"
