@@ -70,3 +70,4 @@ void moveTrainCarsAlongTrack(TRAIN *headtrain, MOVETRAIN *trainmove, TRACKPIECE 
 void printPlayerMoney(void);
 int getFinalScore(void);
 void endGame(void);
+void userPressQ(void);
