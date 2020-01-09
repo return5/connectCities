@@ -477,6 +477,16 @@ void userPressG(void) {
 	}
 }
 
+void userPressQ(void) {
+	printToPrompt("are you sure(y/n)?");
+	if(getch() == 'y') {
+		PLAY_GAME = 0;;
+	}
+	else {
+	    printPlayerMoney();
+    }
+}
+
 void getUserInput(void) {
 	switch(getch()) {
 		case KEY_UP: 
@@ -495,7 +505,7 @@ void getUserInput(void) {
 			break;	
 		case 'g': userPressG();
 			break;	
-		case 'q': PLAY_GAME = 0;
+		case 'q': userPressQ();
 			break;	
 		default:
 			break;		
