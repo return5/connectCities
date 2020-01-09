@@ -9,7 +9,7 @@ see controls.txt for controls and game info.
     game has ben re-written from scratch. should now be much cleaner and more efficent code. 
     
  ## screenshots
-  ![screenshot1](/screenshots/screenshot1.png)
+  ![screenshot1](/creenshots/Screenshot1.png)
   ![screenshot2](/screenshots/screenshot2.png)
     
   ## dependencies 
