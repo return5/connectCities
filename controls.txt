@@ -1,0 +1,7 @@
+  Controls:
+- arrow keys move cursor along map
+- 'y' start/stop placing tracks. tracks must start at city. 
+      - pressing 'y' on finial piece of an un-finished track allows player to continue building that track
+      - completed track is one which starts at a city and ends at a city.
+- 'g' sends trains down completed tracks
+- 'q' quits game
