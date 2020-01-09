@@ -11,7 +11,8 @@ see controls.txt for controls and game info.
  ## screenshots
   ![screenshot1](/screenshots/Screenshot1.png)
   ![screenshot2](/screenshots/screenshot2.png)
-    
+  ![screenshot2](/screenshots/screenshot3.png)
+  
   ## dependencies 
     will need:
       - C compiler. gcc or clang is required to compile if using the install.sh script
