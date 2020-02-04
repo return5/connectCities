@@ -84,7 +84,7 @@ void initGame(void) {
 
 void printPlayerMoney(void) {
 	char c[25];
-	sprintf(c,"player money: %d",PLAYER_MONEY);
+	snprintf(c,25,"player money: %d",PLAYER_MONEY);
 	printToPrompt(c);
 	moveCurs();
 }
@@ -227,7 +227,7 @@ int checkIfCity(const TRAINTRACK *const traintrack, const TRACKPIECE *const newl
 void moveCar(TRAIN *const train,TRACKPIECE *const next_loc) {
 	if(next_loc != NULL) {
 		char c[2];
-		sprintf(c,"%c",getTrainPiece(train,next_loc));
+		snprintf(c,2,"%c",getTrainPiece(train,next_loc));
 		train->location = next_loc;
 		wattron(game_win,COLOR_PAIR(train->color));
 		mvwprintw(game_win,train->location->y,train->location->x,c);
@@ -273,7 +273,7 @@ void moveAllTrains(void) {
 			head = head->next;		
 		}
 		printCities();
-		usleep(SLEEP_TIME);
+		nanosleep((const struct timespec[]){{0, SLEEP_TIME}}, NULL);
 	}
 	moveCurs();
 	curs_set(1);
@@ -482,9 +482,7 @@ void userPressQ(void) {
 	if(getch() == 'y') {
 		PLAY_GAME = 0;;
 	}
-	else {
-	    printPlayerMoney();
-    }
+	printPlayerMoney();
 }
 
 void getUserInput(void) {
@@ -527,7 +525,7 @@ int getFinalScore(void) {
 void endGame(void) {
 	curs_set(0);
 	char c[30];
-	sprintf(c,"your final score was %d",getFinalScore());
+	snprintf(c,30,"your final score was %d",getFinalScore());
 	wclear(game_win);
 	mvwprintw(game_win,2,2,"GAME OVER");
 	mvwprintw(game_win,3,2,c);
