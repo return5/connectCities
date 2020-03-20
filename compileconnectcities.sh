@@ -18,14 +18,14 @@ printHelp() {
 useGCC() {
 	(gcc -v >/dev/null 2>&1 && 
 	printf "using GCC\n" &&
-	gcc connectcities.c -orogueclone -Wall -Wextra -O2 -Iheaders -finline-functions -Wswitch-enum -lncurses -std=gnu11 -oconnect_cities ) ||
+	gcc connectcities.c -orogueclone -Wall -Wextra -O2 -lm -Iheaders -finline-functions -Wswitch-enum -lncurses -std=gnu11 -oconnect_cities ) ||
 	printf "error, gcc seems to not be installed.\n"
 }
 
 #compiles game using Clang
 useClang() {
 	printf "using Clang\n"
-	clang connectcities.c -Iheaders -Wall -Wextra -O2 -lncurses -finline-functions -Wswitch-enum -std=gnu11 -oconnect_cities   
+	clang connectcities.c -Iheaders -Wall -Wextra -O2 -lm -lncurses -finline-functions -Wswitch-enum -std=gnu11 -oconnect_cities   
 }
 
 main() {
