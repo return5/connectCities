@@ -17,7 +17,7 @@ printHelp() {
 #use GCC to compile the game
 useGCC() {
     printf "%s\n" "using GCC"
-    gcc -orogueclone -Wall -Wextra -O2 -Iheaders -finline-functions -Wswitch-enum -lncurses -std=gnu11 -oconnect_cities
+    gcc -Wall -Wextra -O2 -Iheaders -finline-functions -Wswitch-enum -lncurses -std=gnu11 -oconnect_cities
 }
 
 #compiles game using Clang
