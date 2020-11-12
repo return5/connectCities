@@ -15,6 +15,6 @@ see controls.txt for controls and game info.
   
   ## dependencies 
     will need:
-      - C compiler. gcc or clang is required to compile if using the install.sh script
+      - C compiler.
       - ncurses. you can get it from: https://invisible-island.net/ncurses/
       - working keyboard
